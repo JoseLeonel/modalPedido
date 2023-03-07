@@ -13,11 +13,6 @@
         .mySwiper2{
             margin: 50px;
         }
-        .grid{
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
-            text-align: center;
-        }
         .swiper-wrapper{
             transform: translate3d(50px, 0px, 0px);
         }
@@ -43,188 +38,202 @@
     </div>
     <div class="grid-container w3-modal" id="id01" >
         <div class="w3-modal-content">
-        <div>
-            <div class="header w3-container">
-                <span onclick="document.getElementById('id01').style.display='none'" 
-                class="w3-button w3-display-topright">&times;</span>
-                <div class="calculator">
-                    <button class="less">-</button>
-                    <span class="number">1</span>
-                    <button class="sum">+</button>
+            <div>
+                <div class="header">
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <div class="calculator">
+                        <button class="less">-</button>
+                        <span class="number">1</span>
+                        <button class="sum">+</button>
+                    </div>
+                    <div class="container-back-add-menu">
+                        <div class="container-back-add">
+                            <button class="button-back">Atrás</button>
+                            <button class="button-clean">Limpiar</button>
+                            <button class="button-add">Agregar</button>
+                        </div> 
+                        <div class="w3-container button-menu">
+                            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">menu</button>
+                        </div>
+                    </div>
+                    <div class="container-menu w3-modal" id="id02">
+                        <div class="js-nav w3-modal-content special">                    
+                            <span onclick="document.getElementById('id02').style.display='none'" 
+                            class="w3-button w3-display-topright">&times;</span>
+                            <nav class="js-nav">          
+                                <button class="js-menu button-detail">TOTAL: $ 33333</button>
+                                <div class="js-menu">
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">Descripcion</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">cant</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">Precio u</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">Desc</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">Iv</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">Total</p>
+                                    </div>
+                                    <div class="container-detail">
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">WHI SKY 200ML</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">1000</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">2999</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">2999</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">23232</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">10000</p>
+                                    </div>
+                                    <div class="container-detail cancel">
+                                        <button class="cancel-button">X</button>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">CAFE VERDE 1 25 GRS BT</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">1000</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">2999</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">2999</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail price">23232</p>
+                                    </div>
+                                    <div class="container-detail">
+                                        <p class="text-container-detail">121212</p>
+                                    </div>
+                                    <div class="container-detail cancel">
+                                        <button class="cancel-button">X</button>
+                                    </div>
+                                </div>
+                            </nav>
+                     
+                        </div> 
+                    </div>    
                 </div>
-                <div class="container-back-add">
-                    <button class="button-back">Atrás</button>
-                    <button class="button-clean">Limpiar</button>
-                    <button class="button-add">Agregar</button>
-                </div>     
-            </div>
-            <span class="title-conos">Conos ---> Precio Base: $0</span>
-            <div class="check-conos">
-                <div class="container-check"><input  type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 900</p></div>
-                <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 1500</p></div>
-                <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono size <br> 3 bolas +$2500</p></div>
-            </div>
-            <p class="check-toopings">Lista de toopings</p>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a class="a-topping" href="#slide1">HELADO</a></div>
-                    <div class="swiper-slide"><a class="a-topping" href="#slide2">HELADO</a></div>
-                    <div class="swiper-slide"><a class="a-topping" href="#slide3">ADICIONAL</a></div>
-                    <div class="swiper-slide"><a class="a-topping" href="#slide4">PARA LLEVAR</a></div> 
-                    <div class="swiper-slide"><a class="a-topping" href="#slide5">PARA LLEVAR</a></div> 
-                    <div class="swiper-slide"><a class="a-topping" href="#slide4">PARA LLEVAR</a></div> 
-                    <div class="swiper-slide"><a class="a-topping" href="#slide4">PARA LLEVAR</a></div> 
-                  
+                <span class="title-conos">Conos ---> Precio Base: $0</span>
+                <div class="check-conos">
+                    <div class="container-check"><input  type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                    <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 900</p></div>
+                    <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 1500</p></div>
+                    <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono size <br> 3 bolas +$2500</p></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" id="slide1">   
-                        <div class="grid">
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña aaaa<br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>  
-                    </div>         
+                <p class="check-toopings">Lista de toopings</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a class="a-topping" href="#slide1">HELADO</a></div>
+                        <div class="swiper-slide"><a class="a-topping" href="#slide2">HELADO</a></div>
+                        <div class="swiper-slide"><a class="a-topping" href="#slide3">ADICIONAL</a></div>
+                        <div class="swiper-slide"><a class="a-topping" href="#slide4">PARA LLEVAR</a></div> 
+                        <div class="swiper-slide"><a class="a-topping" href="#slide5">PARA LLEVAR</a></div> 
+                        <div class="swiper-slide"><a class="a-topping" href="#slide4">PARA LLEVAR</a></div> 
+                        <div class="swiper-slide"><a class="a-topping" href="#slide4">PARA LLEVAR</a></div> 
+                    
                     </div>
-                    <div class="swiper-slide" id="slide2">
-                        <div class="grid">
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña zzzz<br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" id="slide3">
-                        <div class="grid">
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña cccccc<br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" id="slide4">
-                        <div class="grid">
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña vvvvv<br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" id="slide5">
-                        <div class="grid">
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña qqqq<br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>        
-        </div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="slide1">   
+                            <div class="grid">
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña aaaa<br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>  
+                        </div>         
+                        </div>
+                        <div class="swiper-slide" id="slide2">
+                            <div class="grid">
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña zzzz<br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="slide3">
+                            <div class="grid">
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña cccccc<br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="slide4">
+                            <div class="grid">
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña vvvvv<br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="slide5">
+                            <div class="grid">
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña qqqq<br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            <div class="container-check"><button class="normal-button">+</button> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>        
+            </div>
 
-        <div class="container-menu">
-            <button class="button-burger js-burger"><img src="./img/menu.svg"></img></button>
-            <nav class="detail js-nav">
-                <button class="js-menu button-detail">TOTAL: $ 33333</button>
-                <div class="js-menu">
-                    <div class="container-detail">
-                        <p class="text-container-detail">Descripcion</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">cant</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">Precio u</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">Desc</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">Iv</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">Total</p>
-                    </div>
-                    <div class="container-detail">
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">WHI SKY 200ML</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">1000</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">2999</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">2999</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">23232</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">10000</p>
-                    </div>
-                    <div class="container-detail cancel">
-                        <button class="cancel-button">X</button>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">CAFE VERDE 1 25 GRS BT</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">1000</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">2999</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">2999</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail price">23232</p>
-                    </div>
-                    <div class="container-detail">
-                        <p class="text-container-detail">121212</p>
-                    </div>
-                    <div class="container-detail cancel">
-                        <button class="cancel-button">X</button>
-                    </div>
-                </div>
-            </nav>
+           
+            
+
             <button class="js-burger-comment">Comentarios</button>
             <div class="js-nav-comment">       
                 <textarea class="text-area-comment" cols="80" rows="10"></textarea>
-            </div>  
-        </div>  
+            </div> 
+             
         </div> 
+        
     </div>
     
    
@@ -243,7 +252,17 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
-          
+          breakpoints: {
+                200: {
+                slidesPerView: 1,
+                },
+                800: {
+                slidesPerView: 2,
+                },
+                1000: {
+                slidesPerView: 3,
+                }
+            }
 
         });
 
