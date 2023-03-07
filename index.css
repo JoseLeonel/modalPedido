@@ -8,31 +8,39 @@
   margin-right: 10px;
 }
 
-input[type=checkbox] {
+.normal-input[type=checkbox] {
   transform: scale(2.5);
   background-color: black;
 }
 
-.body {
+.w3-modal-content {
+  display: grid;
+  padding: 15px;
+  grid-template-columns: 80% 20%;
+  border-radius: 5px;
+}
+
+.w3-button {
+  font-size: 23px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.restaurante-modal {
   font-size: 20px;
   padding: 10px;
   display: flex;
   position: relative;
 }
-.body .grid-container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 80% 20%;
-}
-.body .grid-container .header {
+.restaurante-modal .grid-container .header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.body .grid-container .header .container-back-add {
+.restaurante-modal .grid-container .header .container-back-add {
   display: flex;
 }
-.body .grid-container .header .container-back-add .button-back {
+.restaurante-modal .grid-container .header .container-back-add .button-back {
   border-radius: 5px;
   border: none;
   background-color: grey;
@@ -41,7 +49,7 @@ input[type=checkbox] {
   margin-right: 10px;
   font-size: 20px;
 }
-.body .grid-container .header .container-back-add .button-add {
+.restaurante-modal .grid-container .header .container-back-add .button-add {
   border-radius: 5px;
   border: none;
   background-color: #29776d;
@@ -50,7 +58,7 @@ input[type=checkbox] {
   margin-right: 10px;
   font-size: 20px;
 }
-.body .grid-container .header .container-back-add .button-clean {
+.restaurante-modal .grid-container .header .container-back-add .button-clean {
   border-radius: 5px;
   border: none;
   background-color: red;
@@ -59,12 +67,12 @@ input[type=checkbox] {
   margin-right: 10px;
   font-size: 20px;
 }
-.body .grid-container .header .calculator {
+.restaurante-modal .grid-container .header .calculator {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.body .grid-container .header .calculator .less {
+.restaurante-modal .grid-container .header .calculator .less {
   background-color: black;
   color: white;
   border: none;
@@ -75,11 +83,11 @@ input[type=checkbox] {
   font-size: 20px;
   font-weight: bold;
 }
-.body .grid-container .header .calculator .number {
+.restaurante-modal .grid-container .header .calculator .number {
   font-size: 40px;
   font-weight: bold;
 }
-.body .grid-container .header .calculator .sum {
+.restaurante-modal .grid-container .header .calculator .sum {
   background-color: black;
   color: white;
   border: none;
@@ -90,31 +98,31 @@ input[type=checkbox] {
   font-size: 20px;
   font-weight: bold;
 }
-.body .grid-container .title-conos {
+.restaurante-modal .grid-container .title-conos {
   color: #16453f;
   font-size: 20px;
   font-weight: bold;
 }
-.body .grid-container .check-conos {
+.restaurante-modal .grid-container .check-conos {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.body .grid-container .check-conos .container-check {
+.restaurante-modal .grid-container .check-conos .container-check {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.body .grid-container .check-conos .container-check .text-check-conos {
+.restaurante-modal .grid-container .check-conos .container-check .text-check-conos {
   padding-left: 10px;
 }
-.body .grid-container .check-toopings {
+.restaurante-modal .grid-container .check-toopings {
   font-weight: bold;
   color: #16453f;
 }
-.body .grid-container .mySwiper .swiper-wrapper .swiper-slide, .body .grid-container .mySwiper .swiper-wrapper .asd {
+.restaurante-modal .grid-container .mySwiper .swiper-wrapper .swiper-slide, .restaurante-modal .grid-container .mySwiper .swiper-wrapper .asd {
   color: white;
   text-align: center;
   font-size: 18px;
@@ -131,28 +139,28 @@ input[type=checkbox] {
   margin-right: 10px;
   text-decoration: none;
 }
-.body .grid-container .mySwiper .swiper-wrapper .swiper-slide:hover, .body .grid-container .mySwiper .swiper-wrapper .asd:hover {
+.restaurante-modal .grid-container .mySwiper .swiper-wrapper .swiper-slide:hover, .restaurante-modal .grid-container .mySwiper .swiper-wrapper .asd:hover {
   background-color: grey;
 }
-.body .grid-container .mySwiper .swiper-wrapper .swiper-slide .a-topping, .body .grid-container .mySwiper .swiper-wrapper .asd .a-topping {
+.restaurante-modal .grid-container .mySwiper .swiper-wrapper .swiper-slide .a-topping, .restaurante-modal .grid-container .mySwiper .swiper-wrapper .asd .a-topping {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: bold;
 }
-.body .grid-container .mySwiper .swiper-button-prev {
+.restaurante-modal .grid-container .mySwiper .swiper-button-prev {
   font-weight: bold;
   --swiper-navigation-size: 30px;
   color: black;
   border-radius: 5px;
 }
-.body .grid-container .mySwiper .swiper-button-next {
+.restaurante-modal .grid-container .mySwiper .swiper-button-next {
   font-weight: bold;
   --swiper-navigation-size: 30px;
   color: black;
   border-radius: 5px;
 }
-.body .grid-container .js-burger-comment {
+.restaurante-modal .grid-container .js-burger-comment {
   margin-top: 10px;
   border: none;
   border-radius: 5px;
@@ -162,24 +170,30 @@ input[type=checkbox] {
   font-weight: bold;
   padding: 10px;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.body .grid-container .js-nav-comment {
+.restaurante-modal .grid-container .js-nav-comment {
   display: none;
 }
-.body .grid-container .js-nav-comment.open {
+.restaurante-modal .grid-container .js-nav-comment.open {
   display: inline-flex;
 }
-.body .grid-container .js-nav-comment .text-area-comment {
+.restaurante-modal .grid-container .js-nav-comment .text-area-comment {
   margin-top: 10px;
 }
-.body .grid-container .container-menu {
+.restaurante-modal .grid-container .container-menu {
   display: flex;
   margin-left: 15px;
   flex-direction: column;
 }
-.body .grid-container .container-menu .button-burger {
+.restaurante-modal .grid-container .container-menu .button-burger {
   display: flex;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 1rem;
   border: none;
   border-radius: 5px;
@@ -188,22 +202,20 @@ input[type=checkbox] {
   height: 40px;
   width: 40px;
 }
-.body .grid-container .container-menu .button-burger .fa-bars {
-  color: white;
-}
-.body .grid-container .container-menu .js-nav {
+.restaurante-modal .grid-container .container-menu .js-nav {
   display: none;
   border-radius: 5px;
-  min-width: 747px;
+  min-width: 900px;
+  padding: 10px;
   min-height: 320px;
   background-color: rgb(234, 232, 232);
   margin-top: 10px;
 }
-.body .grid-container .container-menu .js-nav.open {
+.restaurante-modal .grid-container .container-menu .js-nav.open {
   display: inline-flex;
   display: grid;
 }
-.body .grid-container .container-menu .js-nav .button-detail {
+.restaurante-modal .grid-container .container-menu .js-nav .button-detail {
   background-color: #29776d;
   border-radius: 5px;
   border: none;
@@ -216,12 +228,12 @@ input[type=checkbox] {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.body .grid-container .container-menu .js-nav .js-menu {
+.restaurante-modal .grid-container .container-menu .js-nav .js-menu {
   display: grid;
   grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
   grid-template-rows: 27% 36% 36%;
 }
-.body .grid-container .container-menu .js-nav .js-menu .container-detail {
+.restaurante-modal .grid-container .container-menu .js-nav .js-menu .container-detail {
   font-size: 20px;
   font-weight: bold;
   padding: 5px;
@@ -230,10 +242,10 @@ input[type=checkbox] {
   align-items: center;
   border-bottom: 1px solid grey;
 }
-.body .grid-container .container-menu .js-nav .js-menu .container-detail .text-container-detail {
+.restaurante-modal .grid-container .container-menu .js-nav .js-menu .container-detail .text-container-detail {
   overflow-wrap: break-word;
 }
-.body .grid-container .container-menu .js-nav .js-menu .container-detail .cancel-button {
+.restaurante-modal .grid-container .container-menu .js-nav .js-menu .container-detail .cancel-button {
   background-color: red;
   border: none;
   color: white;
@@ -241,7 +253,7 @@ input[type=checkbox] {
   border-radius: 5px;
   box-shadow: -3px 3px 5px hsl(0, 4%, 59%);
 }
-.body .grid-container .container-menu .js-nav .js-menu .price {
+.restaurante-modal .grid-container .container-menu .js-nav .js-menu .price {
   color: white;
   background-color: black;
   padding: 5px;

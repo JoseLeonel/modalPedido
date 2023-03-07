@@ -7,19 +7,31 @@
     background-color: black;
     margin-right: 10px;
 }
-input[type=checkbox] {
+
+.normal-input[type=checkbox] {
     transform: scale(2.5);
     background-color: black;
 }
-.body{ 
+
+.w3-modal-content{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 80% 20%;  
+    border-radius: 5px;  
+}
+
+.w3-button{
+    font-size: 23px;
+    background-color: grey;
+    border-radius: 5px; 
+}
+.restaurante-modal{ 
     font-size: 20px;
     padding: 10px;
     display: flex;
     position: relative;
     .grid-container{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 80% 20%;     
+     
         .header{
             display: flex;
             justify-content: space-between;
@@ -172,6 +184,9 @@ input[type=checkbox] {
             font-weight: bold;
             padding:10px;
             font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
         }
         .js-nav-comment{
@@ -191,7 +206,10 @@ input[type=checkbox] {
             flex-direction: column;
             .button-burger{
                 display: flex; 
-                background-color:black;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 margin-right:1rem;
                 border:none;
                 border-radius: 5px;
@@ -199,14 +217,12 @@ input[type=checkbox] {
                 font-size: 20px;
                 height: 40px;
                 width: 40px;
-                .fa-bars{
-                    color: white;        
-                }
             }
             .js-nav{
                 display:none;
                 border-radius: 5px;         
-                min-width: 747px;
+                min-width: 900px;
+                padding: 10px;
                 min-height: 320px;
                 background-color: rgb(234, 232, 232);
                 margin-top: 10px;

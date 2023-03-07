@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/76fe7be4a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./index.css">    
     <title>Document</title>
 
@@ -37,10 +37,16 @@
         
     </style>
 </head>
-<body class="body">
-    <div class="grid-container">    
+<body class="restaurante-modal">
+    <div class="w3-container">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+    </div>
+    <div class="grid-container w3-modal" id="id01" >
+        <div class="w3-modal-content">
         <div>
-            <div class="header">
+            <div class="header w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
                 <div class="calculator">
                     <button class="less">-</button>
                     <span class="number">1</span>
@@ -54,9 +60,9 @@
             </div>
             <span class="title-conos">Conos ---> Precio Base: $0</span>
             <div class="check-conos">
-                <div class="container-check zzz"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
-                <div class="container-check zzz"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 900</p></div>
-                <div class="container-check zzz"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 1500</p></div>
+                <div class="container-check"><input  type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 1 bola +$ 600</p></div>
+                <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 900</p></div>
+                <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono copa pequeña <br> 2 bolas +$ 1500</p></div>
                 <div class="container-check"><input type="checkbox" class="normal-input"></input> <p class="text-check-conos">Cono size <br> 3 bolas +$2500</p></div>
             </div>
             <p class="check-toopings">Lista de toopings</p>
@@ -145,7 +151,7 @@
         </div>
 
         <div class="container-menu">
-            <button class="button-burger js-burger"><i class="fas fa-bars"></i></button>
+            <button class="button-burger js-burger"><img src="./img/menu.svg"></img></button>
             <nav class="detail js-nav">
                 <button class="js-menu button-detail">TOTAL: $ 33333</button>
                 <div class="js-menu">
@@ -217,7 +223,8 @@
             <div class="js-nav-comment">       
                 <textarea class="text-area-comment" cols="80" rows="10"></textarea>
             </div>  
-        </div>   
+        </div>  
+        </div> 
     </div>
     
    
