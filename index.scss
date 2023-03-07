@@ -1,0 +1,277 @@
+.normal-button{
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -3px 3px 5px hsl(0, 4%, 59%);
+    background-color: black;
+    margin-right: 10px;
+}
+input[type=checkbox] {
+    transform: scale(2.5);
+    background-color: black;
+}
+.body{ 
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    .grid-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 80% 20%;     
+        .header{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .container-back-add {
+                display: flex;
+                .button-back{
+                    border-radius: 5px;
+                    border: none;
+                    background-color: grey;
+                    color: white;
+                    width: 90px;
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+                .button-add{
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #29776d;
+                    color: white;
+                    width: 120px;
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+                .button-clean{
+                    border-radius: 5px;
+                    border: none;
+                    background-color: red;
+                    color: white;
+                    width: 120px;
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+            }
+            .calculator {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .less{
+                    background-color: black;
+                    color: white;
+                    border:none;
+                    border-radius: 5px;
+                    box-shadow: -3px 3px 5px #9b9292;
+                    height: 40px;
+                    width: 40px;
+                    font-size: 20px;
+                    font-weight: bold;
+                
+                }
+                .number {
+                    font-size: 40px;
+                    font-weight: bold;
+                   
+                }
+                .sum{
+                    background-color: black;
+                    color: white;
+                    border:none;
+                    border-radius: 5px;
+                    box-shadow: -3px 3px 5px #9b9292;
+                    height: 40px;
+                    width: 40px;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .title-conos{
+            color: #16453f;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .check-conos{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .container-check{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .text-check-conos{
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .check-toopings{
+            font-weight: bold;
+            color: #16453f;
+        }
+
+        .mySwiper{
+            .swiper-wrapper{            
+                .swiper-slide, .asd{
+                    color: white;
+                    text-align: center;
+                    font-size: 18px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: grey;
+                    display: block;
+                    float: left;
+                    height: 32px;
+                    line-height: 32px;
+                    box-shadow: -3px 3px 5px grey;
+                    margin-bottom: -1px;
+                    border-radius: 8px 8px 0 0;
+                    margin-right: 10px;
+                    text-decoration:none;  
+                    &:hover{
+                        background-color: grey;
+                        } 
+                    .a-topping{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+                    
+            }
+            .swiper-button-prev{
+                font-weight: bold;
+                --swiper-navigation-size: 30px;
+                color: black;
+                border-radius: 5px;
+             
+                
+            }
+            .swiper-button-next{
+                font-weight: bold;
+                --swiper-navigation-size: 30px;
+                color: black;
+                border-radius: 5px;
+               
+            }
+        }
+        .js-burger-comment{
+            margin-top: 10px;
+            border:none;
+            border-radius: 5px;
+            box-shadow: -3px 3px 5px #9b9292;
+            height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            padding:10px;
+            font-size: 20px;
+            
+        }
+        .js-nav-comment{
+            display:none;
+            &.open{
+                display:inline-flex;
+            } 
+
+            .text-area-comment{
+                margin-top: 10px;
+            }
+        }
+
+        .container-menu{
+            display: flex;
+            margin-left: 15px;
+            flex-direction: column;
+            .button-burger{
+                display: flex; 
+                background-color:black;
+                margin-right:1rem;
+                border:none;
+                border-radius: 5px;
+                padding:10px;
+                font-size: 20px;
+                height: 40px;
+                width: 40px;
+                .fa-bars{
+                    color: white;        
+                }
+            }
+            .js-nav{
+                display:none;
+                border-radius: 5px;         
+                min-width: 747px;
+                min-height: 320px;
+                background-color: rgb(234, 232, 232);
+                margin-top: 10px;
+                             
+                &.open{
+                    display:inline-flex;
+                    display: grid;
+                } 
+                .button-detail{
+                    background-color: #29776d;
+                    border-radius: 5px;
+                    border: none;
+                    display: flex !important;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                .js-menu{
+                    display: grid;
+                    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+                    grid-template-rows: 27% 36% 36%;
+
+                    .container-detail{
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-bottom: 1px solid grey;
+                        .text-container-detail{
+                            overflow-wrap: break-word;
+                        }
+                        .cancel-button{
+                            background-color: red;
+                            border: none;
+                            color: white;
+                            padding: 10px;
+                            border-radius: 5px;
+                            box-shadow: -3px 3px 5px hsl(0, 4%, 59%);
+                            
+                        }
+                    }.price{        
+                        color: white;  
+                        background-color: black;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                    
+                     
+                }
+            }
+
+        }
+
+
+    }
+    
+}
+
+
+
+
+
