@@ -293,8 +293,9 @@ w3-button,.w3-black, .z{
 
 
             .swiper.mySwiper{
-                .swiper-wrapper{          
+                .swiper-wrapper{        
                     .swiper-slide{
+                        width: 270px !important;
                         color: white;
                         text-align: center;
                         font-size: 18px;
@@ -324,9 +325,10 @@ w3-button,.w3-black, .z{
                 }
                 .swiper-button-prev{
                     font-weight: bold;
-                    --swiper-navigation-size: 30px;
+                    --swiper-navigation-size: 35px;
                     color: black;
                     border-radius: 5px;
+                    left: var(--swiper-navigation-sides-offset,0px);   
                 
                     
                 }
@@ -335,6 +337,7 @@ w3-button,.w3-black, .z{
                     --swiper-navigation-size: 30px;
                     color: black;
                     border-radius: 5px;
+                    right: var(--swiper-navigation-sides-offset,-1px);
                 
                 }
             }
@@ -346,6 +349,8 @@ w3-button,.w3-black, .z{
                         .grid.s2 {
                             display: grid;
                             grid-template-columns: 25% 25% 25% 25%;
+                            grid-template-rows: 16% 16% 16% 16% 16% 16%;
+                            padding-left: 30px;
                             text-align: center;
                             @media (max-width: 600px) {
                                     grid-template-columns: 50% 50%;
@@ -382,15 +387,19 @@ w3-button,.w3-black, .z{
                 }
                 .swiper-button-prev{
                     font-weight: bold;
-                    --swiper-navigation-size: 30px;
+                    --swiper-navigation-size: 34px;
                     color: black;
-                    border-radius: 5px;           
+                    border-radius: 5px;  
+                    left: var(--swiper-navigation-sides-offset,0px);         
                 }
                 .swiper-button-next{
                     font-weight: bold;
-                    --swiper-navigation-size: 30px;
+                    --swiper-navigation-size: 34px;
                     color: black;
                     border-radius: 5px;
+                    
+                    right: var(--swiper-navigation-sides-offset,-1px);
+
                 }
 
             }

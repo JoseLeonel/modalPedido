@@ -281,6 +281,7 @@ w3-button, .w3-black, .z {
   margin-top: -5px;
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper .swiper-wrapper .swiper-slide {
+  width: 270px !important;
   color: white;
   text-align: center;
   font-size: 18px;
@@ -308,15 +309,17 @@ w3-button, .w3-black, .z {
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper .swiper-button-prev {
   font-weight: bold;
-  --swiper-navigation-size: 30px;
+  --swiper-navigation-size: 35px;
   color: black;
   border-radius: 5px;
+  left: var(--swiper-navigation-sides-offset, 0px);
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper .swiper-button-next {
   font-weight: bold;
   --swiper-navigation-size: 30px;
   color: black;
   border-radius: 5px;
+  right: var(--swiper-navigation-sides-offset, -1px);
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper2 {
   margin: 20px;
@@ -324,6 +327,8 @@ w3-button, .w3-black, .z {
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper2 .swiper-wrapper .swiper-slide .grid.s2 {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 16% 16% 16% 16% 16% 16%;
+  padding-left: 30px;
   text-align: center;
 }
 @media (max-width: 600px) {
@@ -358,15 +363,17 @@ w3-button, .w3-black, .z {
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper2 .swiper-button-prev {
   font-weight: bold;
-  --swiper-navigation-size: 30px;
+  --swiper-navigation-size: 34px;
   color: black;
   border-radius: 5px;
+  left: var(--swiper-navigation-sides-offset, 0px);
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper2 .swiper-button-next {
   font-weight: bold;
-  --swiper-navigation-size: 30px;
+  --swiper-navigation-size: 34px;
   color: black;
   border-radius: 5px;
+  right: var(--swiper-navigation-sides-offset, -1px);
 }
 .restaurante-modal .grid-container .w3-modal-content .js-burger-comment {
   margin-top: 10px;
