@@ -139,7 +139,7 @@
   }
 }
 .container-menu .js-nav .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .less-screen2:hover, .container-menu .w3-modal-content .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .less-screen2:hover, .w3-modal .js-nav .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .less-screen2:hover, .w3-modal .w3-modal-content .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .less-screen2:hover {
-  background-color: grey;
+  background-color: rgb(16, 16, 188);
 }
 .container-menu .js-nav .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .number, .container-menu .w3-modal-content .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .number, .w3-modal .js-nav .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .number, .w3-modal .w3-modal-content .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .number {
   font-size: 40px;
@@ -160,7 +160,7 @@
   }
 }
 .container-menu .js-nav .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .sum-screen2:hover, .container-menu .w3-modal-content .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .sum-screen2:hover, .w3-modal .js-nav .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .sum-screen2:hover, .w3-modal .w3-modal-content .buttons-screen2 .container-calculator-screen2 .calculator-screen2 .sum-screen2:hover {
-  background-color: grey;
+  background-color: rgb(16, 16, 188);
 }
 .container-menu .js-nav .buttons-screen2 .button-add, .container-menu .w3-modal-content .buttons-screen2 .button-add, .w3-modal .js-nav .buttons-screen2 .button-add, .w3-modal .w3-modal-content .buttons-screen2 .button-add {
   height: 50px;
@@ -180,7 +180,7 @@
   }
 }
 .container-menu .js-nav .buttons-screen2 .button-add:hover, .container-menu .w3-modal-content .buttons-screen2 .button-add:hover, .w3-modal .js-nav .buttons-screen2 .button-add:hover, .w3-modal .w3-modal-content .buttons-screen2 .button-add:hover {
-  background-color: #3caa9b;
+  background-color: rgb(16, 16, 188);
 }
 @media (max-width: 600px) {
   .container-menu .js-nav .buttons-screen2, .container-menu .w3-modal-content .buttons-screen2, .w3-modal .js-nav .buttons-screen2, .w3-modal .w3-modal-content .buttons-screen2 {
