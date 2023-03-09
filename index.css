@@ -80,6 +80,9 @@
   justify-content: center;
   align-items: center;
 }
+.container-menu .js-nav .js-name:hover, .container-menu .w3-modal-content .js-name:hover, .w3-modal .js-nav .js-name:hover, .w3-modal .w3-modal-content .js-name:hover {
+  background-color: rgb(231, 224, 224);
+}
 .container-menu .js-nav .js-nav-name, .container-menu .w3-modal-content .js-nav-name, .w3-modal .js-nav .js-nav-name, .w3-modal .w3-modal-content .js-nav-name {
   display: none;
 }

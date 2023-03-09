@@ -83,10 +83,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            &:hover{
+                background-color: rgb(231, 224, 224);
+            } 
         }
         .js-nav-name{
             display: none;
-           
 
             .input-screen2{
                 margin-top: 10px;
