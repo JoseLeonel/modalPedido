@@ -18,7 +18,9 @@
 
 .js-nav, .w3-modal-content{
     padding: 15px;
-    border-radius: 5px;     
+    border-radius: 5px;
+    justify-content: space-around;    
+    align-items: center; 
 }
 
 
@@ -33,14 +35,12 @@
     font-size: 23px;
     background-color: grey;
     border-radius: 5px;
+    margin: 18px;
+
     @media (max-width: 600px){ 
         margin-top: 10px;
     }
 }
-w3-button,.w3-black, .z{
-    height: 100%;
-}
-
 
 .cancel-button{
     font-size: 16px;
@@ -50,25 +50,70 @@ w3-button,.w3-black, .z{
     margin-left: 15px;
     flex-direction: column;
     .js-nav, .w3-modal-content{
-        
 
-        .button-detail{
-            background-color: #29776d;
-            border-radius: 5px;
-            border: none;
-            display: flex !important;
-            text-align: center;
-            justify-content: center;
+        .container-accordion-screen2{
+            height:350px;
+            .accordion{
+            }
+        }
+        
+        .buttons-screen2 {
+            display: flex;
             align-items: center;
-            color: white;
-            font-size: 25px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            @media (max-width: 800px) {
-                font-size: 16px;
+            margin-bottom: 5px;
+            .button-detail{
+                height: 65px;
+                background-color: #29776d;
+                border-radius: 5px;
+                border: none;
+                display: flex !important;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @media (max-width: 800px) {
+                    font-size: 16px;
+                }
+            }
+            .input-screen2{
+                height: 30px;
+                width: 150px;
+                margin-right: 10px;
+                margin-left: 10px;
+                @media (max-width: 600px) {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+            .button-add{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 5px;
+                background-color: #29776d;
+                color: white;
+                height: 30px;
+                margin-right: 10px;
+                box-shadow: -3px 3px 5px #9b9292;
+                @media (max-width: 800px){ 
+                    padding: 2px;
+                }
+                &:hover{
+                    background-color: #3caa9b;;
+                }
+            }
+
+            @media (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
             }
         }
         .js-menu{
+            height: 150px;
             display: grid;
             grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
             grid-template-rows: 27% 36% 36%;
@@ -83,6 +128,7 @@ w3-button,.w3-black, .z{
                 border-bottom: 1px solid grey;
                 .text-container-detail{
                     overflow-wrap: break-word;
+                    font-size: 16px;
                     @media (max-width: 800px) {
                         font-size: 12px;
                     }
@@ -101,6 +147,7 @@ w3-button,.w3-black, .z{
                 background-color: black;
                 padding: 5px;
                 border-radius: 5px;
+                font-size: 16px;
                 @media (max-width: 800px) {
                     font-size: 12px;
                 }
@@ -199,21 +246,6 @@ w3-button,.w3-black, .z{
 
                             
                         }
-                        .button-add{
-                            border: none;
-                            border-radius: 5px;
-                            background-color: #29776d;
-                            color: white;
-                            padding: 20px;
-                            margin-right: 10px;
-                            box-shadow: -3px 3px 5px #9b9292;
-                            @media (max-width: 800px){ 
-                                padding: 2px;
-                            }
-                            &:hover{
-                                background-color: #3caa9b;;
-                            }
-                        }
                         .button-clean{
                             border: none;
                             border-radius: 5px;
@@ -269,7 +301,7 @@ w3-button,.w3-black, .z{
                 font-size: 15px;
                 .container-check{
                     display: flex;
-                    justify-content: center;
+                    margin-left: 40px;
                     align-items: center;
                     text-align: center;
                     .text-check-conos{
@@ -315,7 +347,7 @@ w3-button,.w3-black, .z{
                         margin-right: 10px;
                         text-decoration:none;  
                         &:hover{
-                            background-color: grey;
+                            background-color: rgb(231, 224, 224);
                             } 
                         .a-topping{
                             text-decoration: none;
@@ -416,6 +448,7 @@ w3-button,.w3-black, .z{
             .js-burger-comment{
                 margin-top: 10px;
                 border:none;
+                background-color: grey;
                 border-radius: 5px;
                 box-shadow: -3px 3px 5px #9b9292;
                 height: 40px;
@@ -426,6 +459,9 @@ w3-button,.w3-black, .z{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                &:hover{
+                    background-color: rgb(231, 224, 224);
+                } 
                 
             }
             .js-nav-comment{
