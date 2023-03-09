@@ -53,6 +53,19 @@
 .container-menu .js-nav .container-accordion-screen2, .container-menu .w3-modal-content .container-accordion-screen2, .w3-modal .js-nav .container-accordion-screen2, .w3-modal .w3-modal-content .container-accordion-screen2 {
   height: 350px;
 }
+.container-menu .js-nav .container-accordion-screen2 .accordion, .container-menu .w3-modal-content .container-accordion-screen2 .accordion, .w3-modal .js-nav .container-accordion-screen2 .accordion, .w3-modal .w3-modal-content .container-accordion-screen2 .accordion {
+  background-color: #62bcb0;
+  border-bottom: 1px solid #2c7a70;
+}
+.container-menu .js-nav .js-nav-name, .container-menu .w3-modal-content .js-nav-name, .w3-modal .js-nav .js-nav-name, .w3-modal .w3-modal-content .js-nav-name {
+  display: none;
+}
+.container-menu .js-nav .js-nav-name .input-screen2, .container-menu .w3-modal-content .js-nav-name .input-screen2, .w3-modal .js-nav .js-nav-name .input-screen2, .w3-modal .w3-modal-content .js-nav-name .input-screen2 {
+  margin-top: 10px;
+}
+.container-menu .js-nav .open, .container-menu .w3-modal-content .open, .w3-modal .js-nav .open, .w3-modal .w3-modal-content .open {
+  display: flex;
+}
 .container-menu .js-nav .buttons-screen2, .container-menu .w3-modal-content .buttons-screen2, .w3-modal .js-nav .buttons-screen2, .w3-modal .w3-modal-content .buttons-screen2 {
   display: flex;
   align-items: center;
@@ -69,23 +82,11 @@
   align-items: center;
   color: white;
   font-size: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-right: 10px;
 }
 @media (max-width: 800px) {
   .container-menu .js-nav .buttons-screen2 .button-detail, .container-menu .w3-modal-content .buttons-screen2 .button-detail, .w3-modal .js-nav .buttons-screen2 .button-detail, .w3-modal .w3-modal-content .buttons-screen2 .button-detail {
     font-size: 16px;
-  }
-}
-.container-menu .js-nav .buttons-screen2 .input-screen2, .container-menu .w3-modal-content .buttons-screen2 .input-screen2, .w3-modal .js-nav .buttons-screen2 .input-screen2, .w3-modal .w3-modal-content .buttons-screen2 .input-screen2 {
-  height: 30px;
-  width: 150px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-@media (max-width: 600px) {
-  .container-menu .js-nav .buttons-screen2 .input-screen2, .container-menu .w3-modal-content .buttons-screen2 .input-screen2, .w3-modal .js-nav .buttons-screen2 .input-screen2, .w3-modal .w3-modal-content .buttons-screen2 .input-screen2 {
-    margin-top: 5px;
     margin-bottom: 5px;
   }
 }
@@ -336,7 +337,7 @@
   text-decoration: none;
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper .swiper-wrapper .swiper-slide:hover {
-  background-color: rgb(231, 224, 224);
+  background-color: #62bcb0;
 }
 .restaurante-modal .grid-container .w3-modal-content .swiper.mySwiper .swiper-wrapper .swiper-slide .a-topping {
   text-decoration: none;

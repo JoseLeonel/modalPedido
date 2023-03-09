@@ -54,7 +54,22 @@
         .container-accordion-screen2{
             height:350px;
             .accordion{
+                background-color:#62bcb0;
+                border-bottom: 1px solid #2c7a70;
             }
+        }
+        .js-name{
+
+        }
+        .js-nav-name{
+            display: none;
+           
+
+            .input-screen2{
+                margin-top: 10px;
+            }
+        }.open{
+            display: flex;
         }
         
         .buttons-screen2 {
@@ -72,19 +87,9 @@
                 align-items: center;
                 color: white;
                 font-size: 25px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                margin-right: 10px;
                 @media (max-width: 800px) {
                     font-size: 16px;
-                }
-            }
-            .input-screen2{
-                height: 30px;
-                width: 150px;
-                margin-right: 10px;
-                margin-left: 10px;
-                @media (max-width: 600px) {
-                    margin-top: 5px;
                     margin-bottom: 5px;
                 }
             }
@@ -347,7 +352,7 @@
                         margin-right: 10px;
                         text-decoration:none;  
                         &:hover{
-                            background-color: rgb(231, 224, 224);
+                            background-color: #62bcb0;
                             } 
                         .a-topping{
                             text-decoration: none;
