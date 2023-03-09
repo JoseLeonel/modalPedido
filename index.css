@@ -33,7 +33,7 @@
   font-size: 23px;
   background-color: grey;
   border-radius: 5px;
-  margin: 18px;
+  margin: 9px;
 }
 @media (max-width: 600px) {
   .w3-button {
@@ -50,12 +50,29 @@
   margin-left: 15px;
   flex-direction: column;
 }
-.container-menu .js-nav .container-accordion-screen2, .container-menu .w3-modal-content .container-accordion-screen2, .w3-modal .js-nav .container-accordion-screen2, .w3-modal .w3-modal-content .container-accordion-screen2 {
-  height: 350px;
-}
 .container-menu .js-nav .container-accordion-screen2 .accordion, .container-menu .w3-modal-content .container-accordion-screen2 .accordion, .w3-modal .js-nav .container-accordion-screen2 .accordion, .w3-modal .w3-modal-content .container-accordion-screen2 .accordion {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
   background-color: #62bcb0;
   border-bottom: 1px solid #2c7a70;
+}
+.container-menu .js-nav .container-accordion-screen2 .accordion:hover, .container-menu .w3-modal-content .container-accordion-screen2 .accordion:hover, .w3-modal .js-nav .container-accordion-screen2 .accordion:hover, .w3-modal .w3-modal-content .container-accordion-screen2 .accordion:hover {
+  background-color: #8af0e0;
+}
+.container-menu .js-nav .js-name, .container-menu .w3-modal-content .js-name, .w3-modal .js-nav .js-name, .w3-modal .w3-modal-content .js-name {
+  margin-top: 10px;
+  border: none;
+  background-color: grey;
+  border-radius: 5px;
+  box-shadow: -3px 3px 5px #9b9292;
+  height: 40px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-menu .js-nav .js-nav-name, .container-menu .w3-modal-content .js-nav-name, .w3-modal .js-nav .js-nav-name, .w3-modal .w3-modal-content .js-nav-name {
   display: none;
@@ -72,7 +89,7 @@
   margin-bottom: 5px;
 }
 .container-menu .js-nav .buttons-screen2 .button-detail, .container-menu .w3-modal-content .buttons-screen2 .button-detail, .w3-modal .js-nav .buttons-screen2 .button-detail, .w3-modal .w3-modal-content .buttons-screen2 .button-detail {
-  height: 65px;
+  height: 50px;
   background-color: #29776d;
   border-radius: 5px;
   border: none;
@@ -91,6 +108,7 @@
   }
 }
 .container-menu .js-nav .buttons-screen2 .button-add, .container-menu .w3-modal-content .buttons-screen2 .button-add, .w3-modal .js-nav .buttons-screen2 .button-add, .w3-modal .w3-modal-content .buttons-screen2 .button-add {
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +116,6 @@
   border-radius: 5px;
   background-color: #29776d;
   color: white;
-  height: 30px;
   margin-right: 10px;
   box-shadow: -3px 3px 5px #9b9292;
 }
